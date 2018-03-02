@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ayush.quantumheaders">
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+    <activity android:label="@string/browse_header" android:name="com.ayush.quantumheaders.BrowseHeaderActivity" android:theme="@android:style/Theme.Material.Settings">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+        </intent-filter>
+    </activity>
+    <activity android:label="Quotes by Ayush" android:name=".quotes">
+        <intent-filter>
+            <action android:name="org.omnirom.DaylightHeaderPack1"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+        </intent-filter>
+    </activity>
+    </application>
+</manifest>
